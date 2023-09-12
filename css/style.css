@@ -175,7 +175,8 @@
   justify-content: center;
 }
 
-.step-img-box::before {
+.step-img-box::before,
+.step-img-box::after {
   content: "";
   display: block;
   border-radius: 50%;
@@ -193,11 +194,21 @@
   padding-bottom: 60%;
 
   background-color: #fdf2e9;
+  /* high priority */
   z-index: -2;
 }
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
 
+  background-color: #fae5d3;
+  /* higher priority */
+  z-index: -1;
+}
 .step-img {
   width: 35%;
+  /* highest priority */
   /* z-index: 10; */
+
   /* transform: scale(1); */
 }
