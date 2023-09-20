@@ -629,3 +629,17 @@
 .footer-link:active {
   color: #555;
 }
+
+.insta-hover:hover,
+.insta-hover:active {
+  color: #e4405f;
+}
+
+.face-hover:hover,
+.face-hover:active {
+  color: #0077b5;
+}
+.twitter-hover:hover,
+.twitter-hover:active {
+  color: #1da1f2;
+}
